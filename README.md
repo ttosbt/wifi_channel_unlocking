@@ -60,7 +60,7 @@ I am pretty sure other cards will work, but again stay within the specifications
 
 ## Credits
 
-The bulk of the procedure that the scripts and new region was based on came directly from [Rick Deckhardt](http://deckhardt.nl/blog/2011/01/20/regulatory-limitations-in-linux-wireless/), so thanks Rick!  :^)
+The bulk of the procedure that the scripts and new region was based on came directly from [Rick Deckardt](http://deckardt.nl/blog/2011/01/20/regulatory-limitations-in-linux-wireless/), so thanks Rick!  :^)
 
 CRDA and the wireless-regdb were pulled from [wireless.kernel.org](http://wireless.kernel.org)
 
