@@ -4,7 +4,7 @@ Damn the man! Sometimes you just want to scan all of those delicious frequencies
 
 Provided are all the tools necessary to load and use a modified version of the wireless-regdb file `'db.txt'` so you can easily include a new region with no disabled wifi channels.  With this you can also modify channel bandwidth, and maximum power output per channel.
 
-Be careful however, using channels or transmission powers not allowed in your region could result in some spooks knocking on your doors or a fine at worst, and/or a fried IC radio at best.  Stay within your hardware specifications and regional laws.
+Be careful however, using channels or transmission powers not allowed in your region could result in some spooks knocking on your doors or a fine at worst, and/or a fried radio at best.  Stay within your hardware specifications and regional laws.
 
 I am not responsible for what you do with your newly gained education, period.  :^)
 
