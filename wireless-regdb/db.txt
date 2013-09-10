@@ -653,6 +653,7 @@ country ZA:
 country ZW:
 	(2402 - 2482 @ 40), (N/A, 20)
 
+#Mmmmmm, delicious frequencies.
 country HX:
        (4910 - 6090 @ 40), (N/A, 27)
        (2402 - 2494 @ 40), (N/A, 27)
