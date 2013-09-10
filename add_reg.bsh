@@ -31,4 +31,6 @@ make
 make install
 echo
 
-echo "BREAKIN' THE LAW! :^) Please reboot the system for the changes to take effect."
+echo "Please follow the laws of your region and stay within the specifications of your hardware."
+echo "I am not responsible for any repercussions of using this software."
+echo "Please reboot the system for the changes to take effect."
