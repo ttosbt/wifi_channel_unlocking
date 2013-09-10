@@ -8,6 +8,8 @@ Be careful however, using channels or transmission powers not allowed in your re
 
 I am not responsible for what you do with your newly gained education, period.  :^)
 
+Also, I do not claim to be an expert on any of this stuff...so if I jacked up some documentation or said something the wrong way please be kind, and I will correct the problem.  If you are mean, I will also probably correct the problem but I will do it with a sour look on my face.
+
 ## Detailed Description & Usage
 
 When you run the `'add_reg.bsh'` script it will first build wireless-regdb which creates a new `'regulatory.bin'` based on the included modified version of `'db.txt'` and generates some keys.  The new `'regulatory.bin'` file based on your systems type will be placed in `'/usr/lib/crda'` or `'/usr/lib64/crda'`.  However, before you can use the new region, the script needs to use the private key that was generated in the build of wireless-regdb to install a new [CRDA](http://wireless.kernel.org/en/developers/Regulatory/CRDA) which checks the validity of, you guessed it, `'regulatory.bin'`.  With the newly built and installed CRDA the cfg80211 module can be reloaded or the system rebooted so you can use the new region.
