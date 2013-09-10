@@ -4,7 +4,7 @@ Damn the man! Sometimes you just want to scan all of those delicious frequencies
 
 Provided are all the tools necessary to load and use a modified version of the wireless-regdb file `'db.txt'` so you can easily include a new region with no disabled wifi channels.  With this you can also modify channel bandwidth, and maximum power output per channel.
 
-Be careful however, using channels or transmission powers not allowed in your region could result in some spooks knocking on your doors or a fine at worst, and/or a fried wireless radio at best.  Stay within your hardware specifications and regional laws.
+Be careful however, using channels or transmission powers not allowed in your region could result in some spooks knocking on your doors or a fine at worst, and/or a fried IC radio at best.  Stay within your hardware specifications and regional laws.
 
 I am not responsible for what you do with your newly gained education, period.  :^)
 
@@ -16,8 +16,8 @@ This repository contains the [wireless-regdb (2009.11.25-1)](http://wireless.ker
 
 ## Provided Scripts
 
-`'add_reg.bsh'` - Used to build and install a new `'regulatory.bin'` along with the necessary signing authorities so your system can trust the new file.
-`'remove_reg.bsh'` - Used to put your system back to the way it was before you added a new region.  NOTE, this does not uninstall CRDA, it will remain at the 1.1.3 version.
+  *`'add_reg.bsh'` - Used to build and install a new `'regulatory.bin'` along with the necessary signing authorities so your system can trust the new file.
+  *`'remove_reg.bsh'` - Used to put your system back to the way it was before you added a new region.  NOTE, this does not uninstall CRDA, it will remain at the 1.1.3 version.
 
 I was not able to get the unload and loading of the cfg80211 module to work properly, so a reboot will do nicely.  If anyone knows how to fully unload and reload the necessary modules to get this working without a reboot, please let me know!)
 
