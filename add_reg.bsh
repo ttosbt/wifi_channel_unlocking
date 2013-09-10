@@ -1,0 +1,34 @@
+#!/bin/bash
+
+reg_bin="regulatory.bin"
+reg_bin_32_path="/usr/lib/crda/$reg_bin"
+reg_bin_64_path="/usr/lib64/crda/$reg_bin"
+crda_path="crda-1.1.3"
+
+function save_regulatory {
+     if [ -e "$1" ]; then
+          if [ ! -e "$1.old" ]; then
+               mv "$1" "$1.old"
+          fi
+          cp "./$reg_bin" "$1"
+     fi
+}
+
+echo "Building wireless-regdb with the modified db.txt."
+cd "./wireless-regdb"
+make
+echo
+
+echo "Saving off a copy of the old regulatory.bin and droping the new one in the right locations."
+save_regulatory $reg_bin_32_path
+save_regulatory $reg_bin_64_path
+cp "$USER.key.pub.pem" "../$crda_path/pubkeys/"
+echo
+
+echo "Building CRDA with the new certificates from wireless-regdb."
+cd "../$crda_path/"
+make
+make install
+echo
+
+echo "BREAKIN' THE LAW! :^) Please reboot your system for the changes to take effect."

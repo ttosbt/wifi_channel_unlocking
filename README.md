@@ -56,10 +56,12 @@ The scripts and source environments provided above were tested and built on a sy
 * AWUS036H @ 1000mW
 * WLI-CB-G54S @ 2000mW
 
-I am pretty sure other cards will work, but again stay within the specifications of your hardware.  Again, I am not responsible for any damage you may cause to your hardware.
+I am pretty sure other cards will work, but again stay within the specifications of your hardware.  I am not responsible for any damage you may cause to your hardware.
 
 ## Credits
 
 The bulk of the procedure that the scripts and new region was based on came directly from [Rick Deckhardt](http://deckhardt.nl/blog/2011/01/20/regulatory-limitations-in-linux-wireless/), so thanks Rick!  :^)
+
+CRDA and the wireless-regdb were pulled from [wireless.kernel.org](http://wireless.kernel.org)
 
 Everything else including the scripts were written and are provided for use as you see fit solely by me.
