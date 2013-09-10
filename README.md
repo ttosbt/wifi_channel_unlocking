@@ -16,8 +16,8 @@ This repository contains the [wireless-regdb (2009.11.25-1)](http://wireless.ker
 
 ## Provided Scripts
 
-  *`'add_reg.bsh'` - Used to build and install a new `'regulatory.bin'` along with the necessary signing authorities so your system can trust the new file.
-  *`'remove_reg.bsh'` - Used to put your system back to the way it was before you added a new region.  NOTE, this does not uninstall CRDA, it will remain at the 1.1.3 version.
+* `'add_reg.bsh'` - Used to build and install a new `'regulatory.bin'` along with the necessary signing authorities so your system can trust the new file.
+* `'remove_reg.bsh'` - Used to put your system back to the way it was before you added a new region.  NOTE, this does not uninstall CRDA, it will remain at the 1.1.3 version.
 
 I was not able to get the unload and loading of the cfg80211 module to work properly, so a reboot will do nicely.  If anyone knows how to fully unload and reload the necessary modules to get this working without a reboot, please let me know!)
 
@@ -48,10 +48,10 @@ Then check to see if it actually worked:
 
 The scripts and source environments provided above were tested and built on a system running BackTrack5 R3.  I was able to use all of the channels in the 2.4Ghz and 5.0Ghz bands (provided the hardware was capable) on the following pieces of hardware and at the specified transmit power:
 
-  * AWUS051NH @ 1000mW
-  * AWUS036NH @ 2000mW
-  * AWUS036H @ 1000mW
-  * WLI-CB-G54S @ 2000mW
+* AWUS051NH @ 1000mW
+* AWUS036NH @ 2000mW
+* AWUS036H @ 1000mW
+* WLI-CB-G54S @ 2000mW
 
 I am pretty sure other cards will work, but again stay within the specifications of your hardware.  Again, I am not responsible for any damage you may cause to your hardware.
 
