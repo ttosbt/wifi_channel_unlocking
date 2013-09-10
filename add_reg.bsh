@@ -31,4 +31,4 @@ make
 make install
 echo
 
-echo "BREAKIN' THE LAW! :^) Please reboot your system for the changes to take effect."
+echo "BREAKIN' THE LAW! :^) Please reboot the system for the changes to take effect."
