@@ -1,0 +1,22 @@
+Source: wireless-regdb
+Section: admin
+Priority: optional
+Maintainer: Debian/Ubuntu wpasupplicant Maintainers <pkg-wpa-devel@lists.alioth.debian.org>
+Uploaders: Luis R. Rodriguez <mcgrof@gmail.com>
+Build-Depends: cdbs, debhelper (>= 5), python
+Standards-Version: 3.8.3
+Homepage: http://wireless.kernel.org/en/developers/Regulatory/#Theregulatorydatabase
+
+Package: wireless-regdb
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: crda
+Replaces: wireless-crda
+Description: The Linux wireless regulatory database
+ This package contains the wireless regulatory database used by all
+ cfg80211 based Linux wireless drivers. The wireless database being
+ used is maintained by John Linville, the Linux wireless kernel maintainer.
+ The regulatory database is used by CRDA and cfg80211 to configure wireless
+ devices to operate within the radio spectrum allowed in the local
+ jurisdiction. This regulatory information is provided with no warranty
+ either expressed or implied.

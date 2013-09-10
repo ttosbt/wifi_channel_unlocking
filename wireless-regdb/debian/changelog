@@ -1,0 +1,7 @@
+wireless-regdb (2009.11.25-1) unstable; urgency=low
+
+  * Added new CRDA key path: /etc/wireless-regdb/pubkeys/ for use when
+    CRDA >= 1.1.1 and when openssl is used
+  * Initial release
+
+ -- Luis R. Rodriguez <mcgrof@gmail.com>  Wed, 03 Feb 2010 16:00:00 +0100
