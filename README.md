@@ -51,7 +51,7 @@ As you can see I set the maximum transmit power to 500mW (27dBm), this should be
 
 ## Testing
 
-The scripts and source environments provided above were tested and built on a system running BackTrack5 R3.  I was able to use all of the channels in the 2.4Ghz and 5.0Ghz bands (provided the hardware was capable) on the following pieces of hardware and at the specified transmit power:
+The scripts and source environments provided above were tested and built on a system running BackTrack5 R3 and Kali 1.0.5.  I was able to use all of the channels in the 2.4Ghz and 5.0Ghz bands (provided the hardware was capable) on the following pieces of hardware and at the specified transmit power:
 
 * AWUS051NH @ 1000mW
 * AWUS036NH @ 2000mW
