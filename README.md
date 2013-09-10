@@ -23,10 +23,6 @@ I was not able to get the unload and loading of the cfg80211 module to work prop
 
 Once you have sucessfully loaded the new region you can run the followig commands to activate the new region and verify power levels:
 
-iw
-iwconfig
-iwlist
-
 ## db.txt Format Tutorial
 
 I have included a modified `'db.txt'` within wireless-regdb the modified version contains a new region named HX and is described as follows:
