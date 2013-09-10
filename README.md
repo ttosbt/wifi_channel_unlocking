@@ -52,10 +52,10 @@ Then check to see if it actually worked:
 
 The scripts and source environments provided above were tested and built on a system running BackTrack5 R3.  I was able to use all of the channels in the 2.4Ghz and 5.0Ghz bands (provided the hardware was capable) on the following pieces of hardware and at the specified transmit power:
 
-AWUS051NH @ 1000mW
-AWUS036NH @ 2000mW
-AWUS036H @ 1000mW
-WLI-CB-G54S @ 2000mW
+  * AWUS051NH @ 1000mW
+  * AWUS036NH @ 2000mW
+  * AWUS036H @ 1000mW
+  * WLI-CB-G54S @ 2000mW
 
 I am pretty sure other cards will work, but again stay within the specifications of your hardware.  Again, I am not responsible for any damage you may cause to your hardware.
 
