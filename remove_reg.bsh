@@ -1,0 +1,15 @@
+#!/bin/bash
+
+reg_bin="regulatory.bin"
+reg_bin_32_path="/usr/lib/crda/$reg_bin"
+reg_bin_64_path="/usr/lib64/crda/$reg_bin"
+
+function restore_regulatory {
+     if [ -e "$1.old" ]; then
+          mv "$1.old" "$1"
+     fi
+}
+
+echo "Restoring the old regulatory.bin, if you want expanded channels again please run add_reg.bsh."
+restore_regulatory $reg_bin_32_path
+restore_regulatory $reg_bin_64_path
