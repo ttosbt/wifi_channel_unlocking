@@ -21,25 +21,29 @@ This repository contains the [wireless-regdb (2009.11.25-1)](http://wireless.ker
 
 I was not able to get the unload and loading of the cfg80211 module to work properly, so a reboot will do nicely.  If anyone knows how to fully unload and reload the necessary modules to get this working without a reboot, please let me know!
 
-Once you have sucessfully loaded the new region you can run the followig commands to activate the new region txpower levels and verify maximum allowed power levels:
+Once you have sucessfully loaded the new region you can run the followig commands to activate the new region, update txpower levels, or verify maximum allowed power levels:
 
-1. `'iw reg set HX'` (sets the new region)
-2. `'iw list'` (verify enabled channels)
-3. `'iwconfig <interface>'` (verify power level)
-4. `'iwconfig <interface> txpower <new power level>'` (update power level)
+* `'iw reg set HX'` (sets the new region)
+* `'iw list'` (verify enabled channels)
+* `'iwconfig <interface>'` (verify power level)
+* `'iwconfig <interface> txpower <new power level>'` (update power level)
 
 ## db.txt Format Tutorial
 
 I have included a modified `'db.txt'` within wireless-regdb the modified version contains a new region named HX and is described as follows:
 
+```
 country HX:
        (4910 - 6090 @ 40), (N/A, 27)
        (2402 - 2494 @ 40), (N/A, 27)
+```
 
 The format of this new region is:
 
+```
 country <new country code>
        (<bottom channel> - <top channel> @ <maximum channel bandwidth>), (N/A, <maximum transmit power>)
+```
 
 As you can see I set the maximum transmit power to 500mW (27dBm), this should be fairly low enough to not damage most cards. If you want to boost the maximum power you can change that to 30dBm (1000mW) or 33dBm (2000mW). Then change the transmit power on your card using the commands in the section above.
 
