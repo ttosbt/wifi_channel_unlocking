@@ -23,6 +23,12 @@ function create_link {
      fi
 }
 
+dpkg -s libnl-dev &> /dev/null
+if [ "$?" -eq "1" ]; then
+     echo "libnl-dev is not installed, quitting.  Pleast install that before continuing."
+     exit
+fi
+
 echo "Building wireless-regdb with the modified db.txt."
 cd "./wireless-regdb"
 make
@@ -33,6 +39,7 @@ if [ -e $reg_ka_bin_32_path ] || [ -e $reg_ka_bin_64_path ]; then
           echo "Creating symbolic link $system_crda_path"
           create_link $reg_ka_bin_32_path $system_crda_path
           create_link $reg_ka_bin_64_path $system_crda_path
+          echo
      fi
 fi
 
