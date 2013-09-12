@@ -16,6 +16,10 @@ When you run the `'add_reg.bsh'` script it will first build wireless-regdb which
 
 This repository contains the [wireless-regdb (2009.11.25-1)](http://wireless.kernel.org/download/wireless-regdb_2009.11.25-1.tar.gz), [crda (1.1.3)](http://wireless.kernel.org/download/crda/crda-1.1.3.tar.bz2), and a few scripts to automatically build and install a new `'regulatory.bin'` file on most Linux distributions.
 
+## Requirements
+
+* libnl-dev - Required for the build of CRDA. The debian package is included here but you may choose to install it differently.
+
 ## Provided Scripts
 
 * `'add_reg.bsh'` - Used to build and install a new `'regulatory.bin'` along with the necessary signing authorities so your system can trust the new file.
