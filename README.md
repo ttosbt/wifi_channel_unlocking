@@ -61,6 +61,7 @@ The scripts and source environments provided above were tested and built on a sy
 * AWUS036NH @ 2000mW
 * AWUS036H @ 1000mW
 * WLI-CB-G54S @ 2000mW
+* Intel Corporation PRO/Wireless 2200BG @ 1000mW
 
 I am pretty sure other cards will work, but again stay within the specifications of your hardware.  I am not responsible for any damage you may cause to your hardware.
 
