@@ -1,12 +1,15 @@
 #!/bin/bash
 
-reg_bin="regulatory.bin"
-reg_bt_bin_32_path="/usr/lib/crda/$reg_bin"
-reg_bt_bin_64_path="/usr/lib64/crda/$reg_bin"
-reg_ka_bin_32_path="/lib/crda/$reg_bin"
-reg_ka_bin_64_path="/lib64/crda/$reg_bin"
-system_crda_path="/usr/lib/crda"
 crda_path="crda-1.1.3"
+reg_bin="regulatory.bin"
+system_crda_path="/usr/lib/crda"
+reg_bt_bin_32_path="$system_crda_path/$reg_bin"
+reg_bt_64_path="/usr/lib64/crda"
+reg_bt_bin_64_path="reg_bt_64_path/$reg_bin"
+reg_ka_32_path="/lib/crda"
+reg_ka_bin_32_path="$reg_ka_32_path/$reg_bin"
+reg_ka_64_path="/lib64/crda"
+reg_ka_bin_64_path="$reg_ka_64_path/$reg_bin"
 
 function save_regulatory {
      if [ -e "$1" ]; then
@@ -34,11 +37,11 @@ cd "./wireless-regdb"
 make
 echo
 
-if [ -e $reg_ka_bin_32_path ] || [ -e $reg_ka_bin_64_path ]; then
-     if [ ! -e $system_crda_path ]; then
+if [ -e $reg_ka_32_path ] || [ -e $reg_ka_64_path ]; then
+     if [ ! -d $system_crda_path ]; then
           echo "Creating symbolic link $system_crda_path"
-          create_link $reg_ka_bin_32_path $system_crda_path
-          create_link $reg_ka_bin_64_path $system_crda_path
+          create_link $reg_ka_32_path $system_crda_path
+          create_link $reg_ka_64_path $system_crda_path
           echo
      fi
 fi
@@ -46,6 +49,8 @@ fi
 echo "Saving off a copy of the old regulatory.bin and droping the new one in the right locations."
 save_regulatory $reg_bt_bin_32_path
 save_regulatory $reg_bt_bin_64_path
+save_regulatory $reg_ka_bin_32_path
+save_regulatory $reg_ka_bin_64_path
 cp "$USER.key.pub.pem" "../$crda_path/pubkeys/"
 echo
 
